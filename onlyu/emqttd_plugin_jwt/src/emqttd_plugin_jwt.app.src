@@ -1,0 +1,14 @@
+{application, emqttd_plugin_jwt,
+ [
+  {description, "emqttd jwt plugin"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  ejwt
+                 ]},
+  {mod, { emqttd_plugin_jwt_app, []}},
+  {env, []}
+ ]}.
+
